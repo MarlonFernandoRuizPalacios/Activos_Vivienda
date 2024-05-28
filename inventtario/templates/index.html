@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ministore</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
+  </head> 
+    
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+      <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'images/main-logo.png' %}" class="logo">
+          </a>
+          <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbar-icon">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+            <div class="offcanvas-header px-4 pb-0">
+              <a class="navbar-brand" href="index.html">
+                <img src="{% static 'images/main-logo.png' %}" class="logo">
+              </a>
+              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link me-4 active" href="#billboard">Principio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#company-services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#mobile-products">Apartamentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#smart-watches">Casas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                  <div class="banner-content">
+                    <h1 class="display-2 text-uppercase text-dark pb-5">HERMOSOS INTERIORES Y VISTAS</h1>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="image-holder">
+                    <img src="{% static 'images/banner-image.jpg' %}" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-md-6">
+                  <div class="banner-content">
+                    <h1 class="display-2 text-uppercase text-dark pb-5">CASAS MODERNAS Y HERMOSAS</h1>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="image-holder">
+                    <img src="{% static 'images/banner-imagen.jpg' %}" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-icon swiper-arrow swiper-arrow-prev">
+        <svg class="chevron-left">
+          <use xlink:href="#chevron-left" />
+        </svg>
+      </div>
+      <div class="swiper-icon swiper-arrow swiper-arrow-next">
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right" />
+        </svg>
+      </div>
+    </section>
+    <section id="company-services" class="padding-large">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="cart-outline">
+                  <use xlink:href="#cart-outline" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">Asesoria Gratis</h3>
+                <p>Se asegura un asesoramiento gratis al comprador o comprados interesados.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="quality">
+                  <use xlink:href="#quality" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">Garantia de Calidad</h3>
+                <p>Garantizamos la venta de propiedades de calidad y seguras.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="price-tag">
+                  <use xlink:href="#price-tag" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">Ofertas Diarias</h3>
+                <p>Ofertas de propiedades todos los dias.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="shield-plus">
+                  <use xlink:href="#shield-plus" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">Pago 100% Seguro</h3>
+                <p>Pagos Seguros a todos los usuarios que desean comprar la propiedad de sus sueños.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product spad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                  <div class="section-title">
+                      <h4>Apartamentos</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              {% for activo in activos %}
+                  {% if activo.category == "APARTMENT" %}
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                      <div class="product__item">
+                          <div class="product_item_pic set-bg" data-setbg="{{ activo.image.url }}" style="background-size: cover; background-position: center; height: 450px;">
+                              <!-- Puedes agregar más información aquí -->
+                          </div>
+                          <div class="product_item_text">
+                              <ul>
+                                  <li>{{ activo.name }}</li>
+                                  <li>{{ activo.price }}</li>
+                              </ul>
+                              <h5><a href="#">{{ activo.name }}</a></h5>
+                          </div>
+                      </div>
+                  </div>
+                  {% endif %}
+              {% endfor %}
+          </div>
+      </div>
+    </section>
+    <section class="product spad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                  <div class="section-title">
+                      <h4>Casas</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              {% for activo in activos %}
+                  {% if activo.category == "HOUSE" %}
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                      <div class="product__item">
+                          <div class="product_item_pic set-bg" data-setbg="{{ activo.image.url }}" style="background-size: cover; background-position: center; height: 450px;">
+                              <!-- Puedes agregar más información aquí -->
+                          </div>
+                          <div class="product_item_text">
+                              <ul>
+                                  <li>{{ activo.name }}</li>
+                                  <li>{{ activo.price }}</li>
+                              </ul>
+                              <h5><a href="#">{{ activo.name }}</a></h5>
+                          </div>
+                      </div>
+                  </div>
+                  {% endif %}
+              {% endfor %}
+          </div>
+      </div>
+    </section>
+  
+    
+    <footer id="footer" class="overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top-area">
+            <div class="row d-flex flex-wrap justify-content-between">
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu">
+                  <img src="{% static "images/main-logo.png" %}" alt="logo">
+                  <p>Sitio para encontrar tu futura propiedad de entre cientos que se ponen a la venta cada dia en diferentes partes del mundo, garantizando seguridad y calidad.</p>
+
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 pb-3">
+                <div class="footer-menu text-uppercase">
+                  <h5 class="widget-title pb-2">Enlaces rapidos</h5>
+                  <ul class="menu-list list-unstyled text-uppercase">
+                    <li class="menu-item pb-2">
+                      <a href="#">Principio</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Acerca de</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Sitio</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Blogs</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu text-uppercase">
+                  <h5 class="widget-title pb-2">Ayuda & informacion de ayuda</h5>
+                  <ul class="menu-list list-unstyled">
+                    <li class="menu-item pb-2">
+                      <a href="#">Vea la Propiedad</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Politicas de garantia</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Asesoria</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Contacta con nosotros</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Preguntas Frecuentes</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu contact-item">
+                  <h5 class="widget-title text-uppercase pb-2">Contacta con nosotros</h5>
+                  <p>¿Tiene alguna consulta o sugerencia? <a href="mailto:">yourinfo@gmail.com</a>
+                  </p>
+                  <p>¿Necesitas soporte? Llamanos <a href="">+55 111 222 333 44</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </footer>
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-md-4 col-sm-6">
+            <div class="Shipping d-flex">
+              <p>Colaboramos con:</p>
+              <div class="card-wrap ps-2">
+                <img src="{% static "images/dhl.png" %}" alt="visa">
+                <img src="{% static "images/shippingcard.png" %}" alt="mastercard">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="payment-method d-flex">
+              <p>Opciones de Pago:</p>
+              <div class="card-wrap ps-2">
+                <img src="{% static 'images/visa.jpg' %}" alt="visa">
+                <img src="{% static 'images/mastercard.jpg' %}" alt="mastercard">
+                <img src="{% static 'images/paypal.jpg' %}" alt="paypal">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="copyright">
+              <p>© MiniStore. Diseñado por <a >Marlon Ruiz Palacios</a> Distribuido por <a >Marlon Ruiz Palacios</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
