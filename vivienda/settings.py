@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'libreria.urls'
+ROOT_URLCONF = 'vivienda.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'libreria.wsgi.application'
+WSGI_APPLICATION = 'vivienda.wsgi.application'
 
 
 # Database
